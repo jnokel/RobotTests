@@ -9,7 +9,7 @@ jobs:
     name: Jobin nimi vaikka Reiska
     steps:
       - name: Hello world action step
-        id: Jep Jep
+        id: Hello
         uses: actions/hello-world-docker-action@v1
         with:
           who-to-greet: 'Joko Github Actions heräsi'
