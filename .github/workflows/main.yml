@@ -8,9 +8,9 @@ jobs:
     runs-on: ubuntu-latest
     name: Jobin nimi vaikka Reiska
     steps:
-      - name: Hello world action step
+      - name: Nyt kutsuu actionia ja repoa
         id: Hello
-        uses: actions/hello-world-docker-action@v1
+        uses: actions/RobotTests@v1
         with:
           who-to-greet: 'Joko Github Actions heräsi'
           
