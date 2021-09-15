@@ -7,10 +7,11 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v2
         with: 
-            repository: jnokel/RobotTests
+          repository: jnokel/RobotTests
           who-to-greet: 'Greet everyone if this comes out'
+          
       # Use the output from the `hello` step
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
