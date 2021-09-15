@@ -1,15 +1,19 @@
+
+name: Jarmos Github testiä
+
 on: [push]
 
 jobs:
   hello_world_job:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: Jobin nimi vaikka Reiska
     steps:
       - name: Hello world action step
-        id: hello
+        id: Jep Jep
         uses: actions/hello-world-docker-action@v1
         with:
-          who-to-greet: 'Mona the Octocat'
+          who-to-greet: 'Joko Github Actions heräsi'
+          
       # Use the output from the `hello` step
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
