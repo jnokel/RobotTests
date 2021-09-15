@@ -2,12 +2,7 @@ on: [push]
 
 jobs:
 
- runs:
-  using: 'docker'
-  image: 'Dockerfile'
-  args:
-    - ${{ inputs.who-to-greet }}
- 
+
 
 hello_world_job:
     runs-on: ubuntu-latest
@@ -26,7 +21,12 @@ steps:
         with:
           who-to-greet: 'Mona the Octocat'
  
-
+ runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.who-to-greet }}
+ 
  
       # Use the output from the `hello` step
       - name: Get the output time
