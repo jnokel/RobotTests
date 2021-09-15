@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: Nyt kutsuu actionia ja repoa
         id: Hello
-        uses: actions/RobotTests@v1
+        uses: actions/checkout@v2
         with:
           who-to-greet: 'Joko Github Actions heräsi'
           
