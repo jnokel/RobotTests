@@ -5,11 +5,10 @@ jobs:
     runs-on: ubuntu-latest
     name: GHA testiä
     steps:
-      - name: Hello world action step
+      - name: Hello Hello action step
         id: hello
       - uses: actions/checkout@v2
         with: 
-          repository: jnokel/RobotTests
           who-to-greet: 'Greet everyone if this comes out'
           
       # Use the output from the `hello` step
