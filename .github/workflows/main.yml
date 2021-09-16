@@ -16,8 +16,8 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}        
     - name: Checkout
       uses: actions/checkout@v2
-    - name: next steppi
-      uses: ./
+    - name: Running tests
+      uses: ./action
       id: Hello
       with:
           who-to-greet: 'Joko Github Actions heräsi'
