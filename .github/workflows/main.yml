@@ -9,8 +9,10 @@ jobs:
     name: Jobin nimi vaikka Reiska
     steps:
       - name: Nyt kutsuu actionia ja repoa
-        id: Hello
         uses: actions/checkout@v2
+      - name: next steppi
+        uses: ./
+        id: Hello
         with:
           who-to-greet: 'Joko Github Actions heräsi'
           
