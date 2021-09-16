@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Jobin nimi vaikka Reiska
     steps:
-      - name: Nyt kutsuu actionia ja repoa
+      - name: Checkout
         uses: actions/checkout@v2
       - name: next steppi
         uses: ./
