@@ -4,9 +4,9 @@ COPY . /app
 WORKDIR /app
 RUN pip install --upgrade \
                 --no-cache-dir \
-				robotframework \
-                robotframework-requests==0.4.7 \
-                RESTinstance==1.0.0b34
+		robotframework \
+                robotframework-requests \
+                RESTinstance
 				
 ENTRYPOINT robot -d results Tests/ReportingAPI.robot
 # Copies your code file from your action repository to the filesystem path `/` of the container
