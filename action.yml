@@ -11,7 +11,7 @@ outputs:
     description: 'The time we greeted you'
 runs:
   using: 'docker'
-  image: 'solutioncenter-integration-tests'
+  image: 'Dockerfile'
 steps:
   - name: Install Dependencies and setup configurations.
     shell: bash
