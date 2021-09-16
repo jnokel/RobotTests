@@ -21,5 +21,5 @@ runs:
               robotframework-requests==0.4.7 \
               RESTinstance==1.0.0b34
   # image: 'solutioncenter-integration-tests'
-  args:
-    - ${{ inputs.who-to-greet }}
+  #args:
+  #  - ${{ inputs.who-to-greet }}
