@@ -12,7 +12,7 @@ outputs:
 runs:
   using: 'docker'
   image: 'solutioncenter-integration-tests'
-  steps:
+steps:
   - name: Install Dependencies and setup configurations.
     shell: bash
     run: |
