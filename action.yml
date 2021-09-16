@@ -11,6 +11,15 @@ outputs:
     description: 'The time we greeted you'
 runs:
   using: 'docker'
-  image: 'solutioncenter-integration-tests'
+  steps:
+  - name: Install Dependencies and setup configurations.
+    shell: bash
+    run: |
+      pip3 install --upgrade \
+              --no-cache-dir \
+              robotframework \
+              robotframework-requests==0.4.7 \
+              RESTinstance==1.0.0b34
+  # image: 'solutioncenter-integration-tests'
   args:
     - ${{ inputs.who-to-greet }}
