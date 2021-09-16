@@ -10,7 +10,7 @@ outputs:
   time: # id of output
     description: 'The time we greeted you'
 runs:
-  using: 'solutioncenter-integration-tests'
-  image: 'Dockerfile'
+  using: 'docker'
+  image: 'solutioncenter-integration-tests'
   args:
     - ${{ inputs.who-to-greet }}
