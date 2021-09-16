@@ -17,11 +17,11 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
     - name: next steppi
-        uses: ./
-        id: Hello
-        with:
+      uses: ./
+      id: Hello
+      with:
           who-to-greet: 'Joko Github Actions heräsi'
           
       # Use the output from the `hello` step
-      - name: Get the output time
-        run: echo "The time was ${{ steps.hello.outputs.time }}"
+    - name: Get the output time
+      run: echo "The time was ${{ steps.hello.outputs.time }}"
