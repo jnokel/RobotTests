@@ -1,8 +1,8 @@
 # action.yml
-name: 'Hello World'
-description: 'Greet someone and record the time'
+name: 'Katsotaan mihin action menee lokiin'
+description: 'actionyml käynnissä'
 inputs:
-  who-to-greet:  # id of input
+  who-to-greet:  # Jokke
     description: 'Who to greet'
     required: true
     default: 'World'
