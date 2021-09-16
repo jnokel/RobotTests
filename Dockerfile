@@ -8,7 +8,7 @@ RUN pip install --upgrade \
                 robotframework-requests==0.4.7 \
                 RESTinstance==1.0.0b34
 				
-#ENTRYPOINT robot -d results Tests/ReportingAPI.robot
+ENTRYPOINT robot -d results Tests/ReportingAPI.robot
 # Copies your code file from your action repository to the filesystem path `/` of the container
 #COPY entrypoint.sh /entrypoint.sh
 
