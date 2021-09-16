@@ -11,6 +11,7 @@ outputs:
     description: 'The time we greeted you'
 runs:
   using: 'docker'
+  image: 'solutioncenter-integration-tests'
   steps:
   - name: Install Dependencies and setup configurations.
     shell: bash
@@ -23,3 +24,6 @@ runs:
   # image: 'solutioncenter-integration-tests'
   #args:
   #  - ${{ inputs.who-to-greet }}
+
+  #  run: |
+  #    ./run-tests-action.sh
