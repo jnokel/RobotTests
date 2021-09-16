@@ -7,7 +7,6 @@ RUN pip install --upgrade \
 		robotframework-requests==0.4.7 \
                 #RESTinstance==1.0.0b34 \
                 robotframework-seleniumlibrary \
-		robotframework-jsonlibrary \
 		RESTinstance
 				
 ENTRYPOINT robot -d results Tests/ReportingAPI.robot
