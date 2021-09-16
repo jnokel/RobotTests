@@ -1,7 +1,7 @@
 FROM robotframework/rfdocker:3.1.2
 COPY . /app
 WORKDIR /app
-RUN pip install --upgrade pip \
+RUN pip install --upgrade \
                 --no-cache-dir \
 		robotframework \
 		robotframework-requests==0.4.7 \
