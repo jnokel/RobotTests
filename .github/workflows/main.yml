@@ -10,9 +10,9 @@ jobs:
     
     steps:
     - name: Login to docker hub
-      uses: uses: docker/login-action@v1
+      uses: docker/login-action@v1
       with: 
-           username: docjanokel
+          username: docjanokel
           password: ElisaIG1234!        
       - name: Checkout
         uses: actions/checkout@v2
