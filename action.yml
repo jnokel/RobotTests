@@ -26,4 +26,5 @@ steps:
   #  - ${{ inputs.who-to-greet }}
 
   #  run: |
-      ./run-tests-action.sh
+  #    ./run-tests-action.sh
+run --rm -i -t solutioncenter-integration-tests
