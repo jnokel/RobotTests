@@ -21,6 +21,7 @@ steps:
               robotframework \
               robotframework-requests==0.4.7 \
               RESTinstance==1.0.0b34
+              robot ./Tests/ReportingAPI.robot
   # image: 'solutioncenter-integration-tests'
   #args:
   #  - ${{ inputs.who-to-greet }}
@@ -28,4 +29,4 @@ steps:
   #  run: |
   #    ./run-tests-action.sh
   
-  robot ./Tests/ReportingAPI.robot
+  
