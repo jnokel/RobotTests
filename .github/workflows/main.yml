@@ -1,8 +1,10 @@
 
 name: Jarmos Github testiä
 
+#use this for manual Run 
 on: [workflow_dispatch]
 
+#use this for run on commit 
 #on: [push]
 
 jobs:
