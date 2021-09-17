@@ -4,7 +4,7 @@ WORKDIR /app
 RUN pip install --upgrade \
                 --no-cache-dir \
 		robotframework \
-		robotframework-requests==2.18.4 \
+		robotframework-requests==0.9.1 \
                 RESTinstance==1.0.0b34 \
                 robotframework-seleniumlibrary
 		#RESTinstance
