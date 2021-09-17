@@ -5,7 +5,7 @@ RUN pip install --upgrade \
                 --no-cache-dir \
 		robotframework \
 		robotframework-requests==0.4.7 \
-                #RESTinstance==1.0.0b34 \
+                RESTinstance==1.0.0b34 \
                 robotframework-seleniumlibrary
 		#RESTinstance
 				
