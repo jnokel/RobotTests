@@ -1,7 +1,9 @@
 
 name: Jarmos Github testiä
 
-on: [push]
+on: [workflow_dispatch]
+
+#on: [push]
 
 jobs:
   hello_world_job:
