@@ -27,4 +27,5 @@ steps:
 
   #  run: |
   #    ./run-tests-action.sh
-run --rm -i -t solutioncenter-integration-tests
+  
+  robot ./Tests/ReportingAPI.robot
