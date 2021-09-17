@@ -3,8 +3,7 @@ COPY . /app
 WORKDIR /app
 RUN pip install --upgrade \
                 --no-cache-dir \
-		robotframework \
-		robotframework-requests==0.9.1 \
+		robotframework-requests==0.4.7 \
                 RESTinstance==1.0.0b34 \
                 robotframework-seleniumlibrary
 		#RESTinstance
